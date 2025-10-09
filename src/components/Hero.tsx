@@ -16,10 +16,10 @@ export const Hero = () => {
           <div className="space-y-4">
             <p className="text-primary text-lg font-medium tracking-wide">Hi, I'm</p>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold gradient-text">
-              Alex Thompson
+              Clément Palézis
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light">
-              Full Stack Software Engineer
+              Software Engineer
             </h2>
           </div>
           

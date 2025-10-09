@@ -18,11 +18,11 @@ export const Contact = () => {
           <div className="glass-card rounded-2xl p-12 space-y-8 hover:shadow-glow transition-all duration-500">
             <div className="space-y-6">
               <a 
-                href="mailto:alex.thompson@example.com"
+                href="mailto:clement.palezis@example.com"
                 className="flex items-center justify-center gap-3 text-xl text-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-6 w-6" />
-                alex.thompson@example.com
+                clement.palezis@example.com
               </a>
               
               <div className="flex gap-6 justify-center pt-4">

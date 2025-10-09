@@ -50,7 +50,7 @@ export const Navigation = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              AT
+              CP
             </a>
 
             {/* Desktop Navigation */}
