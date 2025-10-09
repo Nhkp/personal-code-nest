@@ -38,14 +38,16 @@ export const Hero = () => {
               </span>
             </Button>
             
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download CV
-            </Button>
+            <a href="http://localhost:8000/api/cv" download>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
+              >
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </Button>
+            </a>
           </div>
           
           <div className="flex gap-6 justify-center pt-8">
@@ -58,7 +60,7 @@ export const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/cpalezis" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
