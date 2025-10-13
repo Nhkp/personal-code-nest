@@ -38,7 +38,7 @@ export const Hero = () => {
               </span>
             </Button>
             
-            <a href="http://localhost:8000/api/cv" download>
+            <a href="http://portfolio-backend-production-4059.up.railway.app/api/cv" download>
               <Button
                 size="lg"
                 variant="outline"
