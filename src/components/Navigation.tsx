@@ -8,6 +8,7 @@ const navItems = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
+  { label: "CAN Demo", href: "/can_demo", isRoute: true },
 ];
 
 export const Navigation = () => {
@@ -60,8 +61,10 @@ export const Navigation = () => {
                   key={item.label}
                   href={item.href}
                   onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.href);
+                    if (!item.isRoute) {
+                      e.preventDefault();
+                      scrollToSection(item.href);
+                    }
                   }}
                   className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
                 >
@@ -93,8 +96,10 @@ export const Navigation = () => {
                   key={item.label}
                   href={item.href}
                   onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.href);
+                    if (!item.isRoute) {
+                      e.preventDefault();
+                      scrollToSection(item.href);
+                    }
                   }}
                   className="text-2xl font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
                 >
