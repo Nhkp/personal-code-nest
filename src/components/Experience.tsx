@@ -1,21 +1,39 @@
 const experiences = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    period: "2022 - Present",
-    description: "Leading development of microservices architecture and mentoring junior developers. Improved system performance by 40% through optimization.",
+    title: "R&D Engineer",
+    company: "Denergium",
+    period: "Nov. 2024 - Present",
+    location: "Bordeaux, Nouvelle-Aquitaine, France (Hybrid)",
+    description: `
+At DENERGIUM, I design and build tools that measure and optimize the energy consumption of HPC workloads. My work combines backend and web development with applied research on energy-efficient computing. I develop analysis pipelines and benchmarking frameworks to better understand and reduce the energy impact of AI and simulation applications.
+    `,
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Co.",
-    period: "2020 - 2022",
-    description: "Developed and maintained multiple client-facing applications using React and Node.js. Collaborated with design team to implement responsive UI/UX.",
+    title: "Software Engineer",
+    company: "Scalian DS",
+    period: "Sept. 2022 - Nov. 2024",
+    location: "Bordeaux, Nouvelle-Aquitaine, France (Hybrid)",
+    description: `
+Consultant for ThermoFisher Scientific, optimizing electron cryo-microscopy workflows, collaborating with academic partners to implement advanced algorithms, and designing software prototypes to enhance system performance.
+    `,
   },
   {
-    title: "Software Developer",
-    company: "StartUp Ventures",
-    period: "2019 - 2020",
-    description: "Built RESTful APIs and integrated third-party services. Contributed to agile development process and code reviews.",
+    title: "Software Engineer (Internship)",
+    company: "CEA (French Alternative Energies and Atomic Energy Commission)",
+    period: "Mar. 2022 - Sept. 2022",
+    location: "France",
+    description: `
+High-performance computing on heterogeneous architectures for numerical simulation.
+    `,
+  },
+  {
+    title: "Sales Advisor (Student part-time contract)",
+    company: "H&M",
+    period: "Nov. 2016 - Mar. 2022",
+    location: "Bordeaux, Nouvelle-Aquitaine, France",
+    description: `
+Assistant manager (Level 3 confirmed, permanent), responsible for training and supervising staff, managing merchandising, stock, and cash, and handling customer relations and dispute resolution.
+    `,
   },
 ];
 

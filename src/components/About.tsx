@@ -9,20 +9,15 @@ export const About = () => {
           
           <div className="glass-card rounded-2xl p-8 md:p-12 space-y-6 hover:shadow-glow transition-all duration-500">
             <p className="text-lg text-foreground/90 leading-relaxed">
-              I'm a passionate software engineer with over 5 years of experience building web applications 
-              that make a difference. My journey in tech started with a curiosity about how things work, 
-              and evolved into a career focused on creating innovative solutions.
+I’m a passionate software engineer with 3 years of professional experience building both proof-of-concepts and production-level applications and libraries. What began as an interest in parallel and hybrid computation has grown into a dedication to crafting pragmatic, efficient, and optimized solutions that solve real-world problems.
             </p>
             
             <p className="text-lg text-foreground/90 leading-relaxed">
-              I specialize in full-stack development, with expertise in modern JavaScript frameworks, 
-              cloud infrastructure, and scalable architecture. I thrive in collaborative environments 
-              where I can learn from others and share my knowledge.
+My expertise lies in low-level and backend programming, with a strong focus on performance, reliability, and clean architecture. I thrive in collaborative environments where I can learn from others, share my knowledge, and continuously grow as an engineer.
             </p>
             
             <p className="text-lg text-foreground/90 leading-relaxed">
-              When I'm not coding, you'll find me contributing to open-source projects, writing 
-              technical articles, or exploring the latest trends in web development and AI.
+Outside of coding, I enjoy sports, like running or cycling, and reading — whether it’s books, graphic novels, or newspapers. I also like strategy and board games and keep up with the latest trends through tech news and personal research.
             </p>
           </div>
         </div>

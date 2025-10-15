@@ -18,16 +18,16 @@ export const Contact = () => {
           <div className="glass-card rounded-2xl p-12 space-y-8 hover:shadow-glow transition-all duration-500">
             <div className="space-y-6">
               <a 
-                href="mailto:clement.palezis@example.com"
+                href="mailto:palezis.c@gmail.com"
                 className="flex items-center justify-center gap-3 text-xl text-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-6 w-6" />
-                clement.palezis@example.com
+                palezis.c@gmail.com
               </a>
               
               <div className="flex gap-6 justify-center pt-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/Nhkp" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-secondary hover:bg-primary/20 text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
@@ -42,14 +42,14 @@ export const Contact = () => {
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a 
+                {/* <a 
                   href="https://twitter.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-secondary hover:bg-primary/20 text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
                 >
                   <Twitter className="h-6 w-6" />
-                </a>
+                </a> */}
               </div>
             </div>
             

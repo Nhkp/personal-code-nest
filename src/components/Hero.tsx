@@ -24,8 +24,7 @@ export const Hero = () => {
           </div>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Crafting elegant solutions to complex problems. Passionate about building scalable, 
-            user-centric applications with modern technologies.
+            Crafting pragmatic solutions to complex problems. Focused on building scalable, efficient, and optimized applications with modern technologies.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center items-center">
@@ -52,7 +51,7 @@ export const Hero = () => {
           
           <div className="flex gap-6 justify-center pt-8">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Nhkp" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -68,7 +67,7 @@ export const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:contact@example.com"
+              href="mailto:palezis.c@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
             >
               <Mail className="h-6 w-6" />
