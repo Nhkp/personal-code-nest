@@ -1,31 +1,39 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Gitlab } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    title: "Portfolio Website",
+    description: "A personal portfolio website built with a multi-container Docker architecture, featuring a PostgreSQL database, a FastAPI backend, and a modern responsive frontend.",
+    tags: ["Docker", "PostgreSQL", "Supabase", "FastAPI", "Railway", "Node.js", "Vite", "TypeScript", "React", "Tailwind CSS", "Vercel"],
     image: "bg-gradient-to-br from-blue-500/20 to-purple-500/20",
+    gitlab: "https://gitlab.com/Nhkp/side-project",
+    demo: "#",
   },
   {
-    title: "AI Chat Application",
-    description: "Real-time chat application with AI-powered responses, user authentication, and message encryption.",
-    tags: ["Next.js", "WebSocket", "OpenAI", "MongoDB"],
+    title: "LLM Energy Consumption Study",
+    description: "Influence of Hyperparameters and Hardware Configurations on Energy Consumption in Fine-Tuning an NLP Model.",
+    tags: ["Python", "HuggingFace", "HPC", "SLURM"],
     image: "bg-gradient-to-br from-purple-500/20 to-pink-500/20",
+    // gitlab: "https://gitlab.com/your-portfolio-repo",
+    demo: "http://portfolio-backend-production-4059.up.railway.app/api/paper/hyperparameters_analysis.pdf",
   },
   {
-    title: "Task Management System",
-    description: "Collaborative project management tool with kanban boards, time tracking, and team analytics.",
-    tags: ["Vue.js", "FastAPI", "Redis", "Docker"],
-    image: "bg-gradient-to-br from-cyan-500/20 to-blue-500/20",
+    title: "LLM Energy Consumption Study",
+    description: "Influence of Hyperparameters and Hardware Configurations on Energy Consumption in Fine-Tuning an NLP Model.",
+    tags: ["Python", "HuggingFace", "HPC", "SLURM"],
+    image: "bg-gradient-to-br from-purple-500/20 to-pink-500/20",
+    // gitlab: "https://gitlab.com/your-portfolio-repo",
+    demo: "http://portfolio-backend-production-4059.up.railway.app/api/paper/openradioss_article_v2.pdf",
   },
   {
-    title: "Analytics Dashboard",
-    description: "Real-time analytics dashboard with custom visualizations, data exports, and automated reporting.",
-    tags: ["React", "D3.js", "Python", "AWS"],
+    title: "Mario Maker",
+    description: 'A simple 2D "Mario Maker"–style project focused on memory management, optimization techniques (collision detection), event-driven programming (timers and alarms), and parallelism, with less emphasis on traditional software engineering aspects.',
+    tags: ["C", "SDL2", "CMake", "Makefile"],
     image: "bg-gradient-to-br from-green-500/20 to-cyan-500/20",
+    gitlab: "https://gitlab.com/Nhkp/mario-project",
+    demo: "https://gitlab.com/Nhkp/mario-project/-/raw/master/demo.mp4",
   },
 ];
 
@@ -68,22 +76,38 @@ export const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3 pt-2">
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="border-primary/50 hover:bg-primary/10"
+                  <a 
+                    href={project.gitlab}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabIndex={-1}
+                    className="inline-block"
                   >
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="border-primary/50 hover:bg-primary/10"
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="border-primary/50 hover:bg-primary/10"
+                      >
+                      <Gitlab className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                  </a>
+                  <a 
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabIndex={-1}
+                    className="inline-block"
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="border-primary/50 hover:bg-primary/10"
+                      >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
