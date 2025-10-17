@@ -1,19 +1,16 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LanguageToggle } from "@/components/LanguageToggle";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 import { Menu, X } from "lucide-react";
-
-const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
-];
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,24 +53,63 @@ export const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.href);
-                  }}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
-                >
-                  {item.label}
-                </a>
-              ))}
+              <a
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#about");
+                }}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.about}
+              </a>
+              <a
+                href="#skills"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#skills");
+                }}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.skills}
+              </a>
+              <a
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#projects");
+                }}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.projects}
+              </a>
+              <a
+                href="#experience"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#experience");
+                }}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.experience}
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#contact");
+                }}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.contact}
+              </a>
+              <LanguageToggle />
               <ThemeToggle />
             </div>
 
             {/* Mobile Menu Button */}
             <div className="flex items-center gap-2 md:hidden">
+              <LanguageToggle />
               <ThemeToggle />
               <Button
                 variant="ghost"
@@ -92,19 +128,56 @@ export const Navigation = () => {
         <div className="fixed inset-0 z-40 md:hidden">
           <div className="fixed inset-0 bg-background/95 backdrop-blur-lg">
             <div className="flex flex-col items-center justify-center h-full space-y-8">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.href);
-                  }}
-                  className="text-2xl font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
-                >
-                  {item.label}
-                </a>
-              ))}
+              <a
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#about");
+                }}
+                className="text-2xl font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.about}
+              </a>
+              <a
+                href="#skills"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#skills");
+                }}
+                className="text-2xl font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.skills}
+              </a>
+              <a
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#projects");
+                }}
+                className="text-2xl font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.projects}
+              </a>
+              <a
+                href="#experience"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#experience");
+                }}
+                className="text-2xl font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.experience}
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#contact");
+                }}
+                className="text-2xl font-medium text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer"
+              >
+                {t.nav.contact}
+              </a>
             </div>
           </div>
         </div>

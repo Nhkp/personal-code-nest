@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Gitlab, Linkedin, Mail, Download } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 export const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+  
+  const cvEndpoint = language === "fr" 
+    ? "http://portfolio-backend-production-4059.up.railway.app/api/cv/fr"
+    : "http://portfolio-backend-production-4059.up.railway.app/api/cv/en";
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated gradient background */}
@@ -14,17 +22,17 @@ export const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
           <div className="space-y-4">
-            <p className="text-primary text-lg font-medium tracking-wide">Hi, I'm</p>
+            <p className="text-primary text-lg font-medium tracking-wide">{t.hero.greeting}</p>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold gradient-text">
-              Clément Palézis
+              {t.hero.title}
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light">
-              Software Engineer
+              {t.hero.subtitle}
             </h2>
           </div>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Crafting pragmatic solutions to complex problems. Focused on building scalable, efficient, and optimized applications with modern technologies.
+            {t.hero.description}
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center items-center">
@@ -33,18 +41,18 @@ export const Hero = () => {
               className="group relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300"
             >
               <span className="relative z-10 flex items-center gap-2">
-                View My Work
+                {t.hero.viewWork}
               </span>
             </Button>
             
-            <a href="http://portfolio-backend-production-4059.up.railway.app/api/cv" download>
+            <a href={cvEndpoint} download>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
               >
                 <Download className="mr-2 h-4 w-4" />
-                Download CV
+                {t.hero.downloadCV}
               </Button>
             </a>
           </div>

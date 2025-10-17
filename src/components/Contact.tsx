@@ -1,17 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 export const Contact = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+  
   return (
     <section id="contact" className="py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center space-y-12">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text">
-              Let's Work Together
+              {t.contact.title}
             </h2>
             <p className="text-xl text-muted-foreground">
-              I'm always interested in hearing about new projects and opportunities.
+              {t.contact.subtitle}
             </p>
           </div>
           
@@ -58,7 +63,7 @@ export const Contact = () => {
               className="bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300"
             >
               <Mail className="mr-2 h-5 w-5" />
-              Send Me an Email
+              {t.contact.sendEmail}
             </Button>
           </div>
         </div>
