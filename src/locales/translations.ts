@@ -35,6 +35,7 @@ export const translations = {
       description: "Description du projet",
       viewProject: "Voir le projet",
       projects: {
+        portfolio: {
         mario: {
           title: "Simulation de fluides 3D",
           description: "Simulation de fluides haute performance développée en C++ utilisant les équations Navier-Stokes. Implémente des algorithmes de dynamique des fluides computationnelle avec rendu 3D en temps réel.",
