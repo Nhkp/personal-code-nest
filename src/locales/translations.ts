@@ -11,27 +11,27 @@ export const translations = {
       greeting: "Bonjour, je suis",
       title: "Clément Palézis",
       subtitle: "Ingénieur Logiciel",
-      description: "Créer des solutions pragmatiques à des problèmes complexes. Focus sur la construction d'applications évolutives, efficaces et optimisées avec des technologies modernes.",
+      description: "Je conçois des solutions pragmatiques à des problèmes complexes. Je me concentre sur la conception d'applications évolutives, performantes et optimisées à l'aide de technologies modernes.",
       viewWork: "Voir mes projets",
       downloadCV: "Télécharger CV",
     },
     about: {
       title: "À propos de moi",
-      paragraph1: "Je suis un ingénieur logiciel passionné avec 3 ans d'expérience professionnelle dans la construction de proof-of-concepts et d'applications et bibliothèques de niveau production. Ce qui a commencé comme un intérêt pour le calcul parallèle et hybride s'est transformé en une dévotion à créer des solutions pragmatiques, efficaces et optimisées qui résolvent des problèmes du monde réel.",
-      paragraph2: "Mon expertise réside dans la programmation bas-niveau et backend, avec un fort accent sur la performance, la fiabilité et l'architecture propre. Je m'épanouis dans des environnements collaboratifs où je peux apprendre des autres, partager mes connaissances et grandir continuellement en tant qu'ingénieur.",
-      paragraph3: "En dehors du code, j'aime le sport, comme la course ou le vélo, et la lecture — que ce soit des livres, des bandes dessinées ou des journaux. J'aime aussi les jeux de stratégie et de société et je me tiens au courant des dernières tendances grâce aux actualités tech et à la recherche personnelle.",
-    },
+      paragraph1: "Je suis un ingénieur logiciel passionné, avec 3 ans d'expérience professionnelle dans la création de preuves de concept ainsi que d'applications et de bibliothèques en production. Mon intérêt s'est d'abord porté sur le calcul parallèle et hybride, puis vers la conception de solutions pragmatiques, efficaces et optimisées répondant à des problèmes concrets.",
+      paragraph2: "Mon expertise réside dans la programmation bas-niveau et backend, avec un fort accent sur le calcul haute performance. Je m'épanouis dans des environnements collaboratifs où je peux apprendre des autres, partager mes connaissances et continuer à progresser en tant qu'ingénieur.",
+      paragraph3: "En dehors du code, j'aime le sport, notamment la course à pieds et le vélo, ainsi que la lecture, qu'il s'agisse de livres, de romans graphiques ou de journaux. J'apprécie également les jeux de stratégie et de société, et j'entretiens ma culture scientifique en effectuant de la veille technologique.",
+      },
     skills: {
       title: "Compétences & Technologies",
       categories: {
-        system: "Programmation Système & Bas-niveau",
+        system: "Programmation Système & Bas-Niveau",
         fullstack: "Développement Full-stack",
         ml: "ML & Data Science",
         other: "Autre",
       },
     },
     projects: {
-      title: "Projets en Vedette",
+      title: "Projets",
       description: "Description du projet",
       viewProject: "Voir le projet",
       projects: {
@@ -40,16 +40,16 @@ export const translations = {
           description: "Un site portfolio personnel construit avec une architecture Docker multi-conteneurs, comprenant une base de données PostgreSQL, un backend FastAPI et un frontend moderne et responsive.",
         },
         mario: {
-          title: "Simulation de fluides 3D",
-          description: "Simulation de fluides haute performance développée en C++ utilisant les équations Navier-Stokes. Implémente des algorithmes de dynamique des fluides computationnelle avec rendu 3D en temps réel.",
+          title: "Mario Maker",
+          description: "Un projet simple de type \"Mario Maker\" en 2D plus axé sur la gestion de la mémoire, les techniques d'optimisation, la programmation événementielle et le parallélisme, que sur les aspects traditionnels de l'ingénierie logicielle.",
         },
         fea: {
-          title: "Étude FEA des déformations de moule",
-          description: "Analyse par éléments finis de la déformation des moules en utilisant Python et des bibliothèques scientifiques. Modélise les contraintes thermiques et mécaniques pour optimiser les designs de moules.",
+          title: "Etude énergétique d'un logiciel FEA",
+          description: "Influence des paramètres de calcul et des configurations matérielles sur la consommation d'énergie dans les simulations OpenRadioss.",
         },
         llm: {
-          title: "Étude comparative LLM",
-          description: "Analyse comparative de différents modèles de langage pour une entreprise privée. Évalue les performances, le coût et les cas d'usage de divers LLM sur des ensembles de données personnalisés.",
+          title: "Étude énergétique d'un fine-tuning LLM",
+          description: "Influence des hyperparamètres et des configurations matérielles sur la consommation d'énergie lors du réglage fin d'un modèle NLP.",
         },
       },
     },
@@ -61,14 +61,14 @@ export const translations = {
           company: "Denergium",
           period: "Nov. 2024 - Présent",
           location: "Bordeaux, Nouvelle-Aquitaine, France (Hybride)",
-          description: "Chez DENERGIUM, je conçois et développe des outils qui mesurent et optimisent la consommation énergétique des charges de travail HPC. Mon travail combine le développement backend et web avec la recherche appliquée sur l'informatique éco-énergétique. Je développe des pipelines d'analyse et des frameworks de benchmarking pour mieux comprendre et réduire l'impact énergétique des applications d'IA et de simulation.",
+          description: "Chez DENERGIUM, je conçois et développe des outils qui mesurent et optimisent la consommation énergétique des charges de travail HPC. Mon travail combine le développement backend et web avec la recherche appliquée à la consommation énergétique des calculs. Je développe des pipelines d'analyse et des frameworks de benchmarking pour mieux comprendre et réduire l'impact énergétique des applications d'IA et de simulation numérique.",
         },
         scalian: {
           title: "Ingénieur Logiciel",
           company: "Scalian DS",
           period: "Sept. 2022 - Nov. 2024",
           location: "Bordeaux, Nouvelle-Aquitaine, France (Hybride)",
-          description: "Consultant pour ThermoFisher Scientific, optimisation des workflows de cryo-microscopie électronique, collaboration avec des partenaires académiques pour implémenter des algorithmes avancés, et conception de prototypes logiciels pour améliorer les performances du système.",
+          description: "Consultant pour ThermoFisher Scientific, optimisation des workflows de cryo-tomographie électronique, collaboration avec des partenaires académiques pour implémenter des algorithmes avancés, et conception de prototypes logiciels pour améliorer les performances du système.",
         },
         cea: {
           title: "Ingénieur Logiciel (Stage)",
@@ -82,7 +82,7 @@ export const translations = {
           company: "H&M",
           period: "Nov. 2016 - Mar. 2022",
           location: "Bordeaux, Nouvelle-Aquitaine, France",
-          description: "Manager adjoint (Niveau 3 confirmé, permanent), responsable de la formation et de la supervision du personnel, de la gestion du merchandising, du stock et de la caisse, et de la gestion de la relation client et de la résolution des litiges.",
+          description: "Assistant Manager (Niveau 3 confirmé, permanent), responsable de la formation et de la supervision du personnel, de la gestion du merchandising, du stock et de la caisse. Gestion de la relation client et résolution des litiges.",
         },
       },
     },
@@ -127,15 +127,15 @@ export const translations = {
       },
     },
     projects: {
-      title: "Projets en Vedette",
-      viewProject: "Voir le projet",
+      title: "Featured Projects",
+      viewProject: "View projects",
       projects: {
         portfolio: {
           title: "Portfolio Website",
           description: "A personal portfolio website built with a multi-container Docker architecture, featuring a PostgreSQL database, a FastAPI backend, and a modern responsive frontend.",
         },
         llm: {
-          title: "LLM Energy Consumption Study",
+          title: "LLM fine-tuning Energy Consumption Study",
           description: "Influence of Hyperparameters and Hardware Configurations on Energy Consumption in Fine-Tuning an NLP Model.",
         },
         fea: {
