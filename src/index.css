@@ -8,6 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Light theme (default in CSS, but will use dark via next-themes) */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens - light */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(280 100% 70%));
+    --gradient-secondary: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.5), hsl(210 40% 98% / 0.5));
+    
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.1);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
     --background: 220 26% 6%;
     --foreground: 210 40% 98%;
 
@@ -36,17 +79,13 @@ All colors MUST be HSL.
     --input: 217 33% 17%;
     --ring: 217 91% 60%;
 
-    --radius: 0.75rem;
-
-    /* Custom portfolio tokens */
+    /* Custom portfolio tokens - dark */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(280 100% 70%));
     --gradient-secondary: linear-gradient(180deg, hsl(220 26% 6%), hsl(220 20% 10%));
     --gradient-card: linear-gradient(135deg, hsl(220 20% 10% / 0.5), hsl(220 20% 14% / 0.5));
     
     --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
     --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
-    
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

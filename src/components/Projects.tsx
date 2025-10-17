@@ -56,17 +56,15 @@ export const Projects = () => {
 							className="glass-card border-border/50 hover:shadow-glow transition-all duration-500 group animate-fade-in overflow-hidden"
 							style={{ animationDelay: `${idx * 100}ms` }}
 						>
-							<div className="h-48 relative">
-								<div className={`${project.image} absolute inset-0`} />
-								{project.imageUrl && (
-									<img
-										src={project.imageUrl}
-										alt={project.title}
-										className="absolute inset-0 w-full h-full object-cover"
-										style={{ mixBlendMode: "multiply" }}
-									/>
-								)}
-							</div>
+						<div className="h-48 relative bg-muted/50">
+							{project.imageUrl && (
+								<img
+									src={project.imageUrl}
+									alt={project.title}
+									className="absolute inset-0 w-full h-full object-cover"
+								/>
+							)}
+						</div>
 
 							<CardHeader>
 								<CardTitle className="text-2xl group-hover:text-primary transition-colors">
