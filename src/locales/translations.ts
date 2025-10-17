@@ -36,6 +36,9 @@ export const translations = {
       viewProject: "Voir le projet",
       projects: {
         portfolio: {
+          title: "Site Portfolio",
+          description: "Un site portfolio personnel construit avec une architecture Docker multi-conteneurs, comprenant une base de données PostgreSQL, un backend FastAPI et un frontend moderne et responsive.",
+        },
         mario: {
           title: "Simulation de fluides 3D",
           description: "Simulation de fluides haute performance développée en C++ utilisant les équations Navier-Stokes. Implémente des algorithmes de dynamique des fluides computationnelle avec rendu 3D en temps réel.",
@@ -128,20 +131,20 @@ export const translations = {
       viewProject: "Voir le projet",
       projects: {
         portfolio: {
-          title: "Site Portfolio",
-          description: "Un site portfolio personnel construit avec une architecture Docker multi-conteneurs, comprenant une base de données PostgreSQL, un backend FastAPI et un frontend moderne et responsive.",
+          title: "Portfolio Website",
+          description: "A personal portfolio website built with a multi-container Docker architecture, featuring a PostgreSQL database, a FastAPI backend, and a modern responsive frontend.",
         },
         llm: {
-          title: "Étude Consommation Énergétique LLM",
-          description: "Influence des hyperparamètres et des configurations matérielles sur la consommation énergétique lors du fine-tuning d'un modèle NLP.",
+          title: "LLM Energy Consumption Study",
+          description: "Influence of Hyperparameters and Hardware Configurations on Energy Consumption in Fine-Tuning an NLP Model.",
         },
         fea: {
-          title: "Étude Consommation Énergétique FEA",
-          description: "Influence des paramètres de calcul et des configurations matérielles sur la consommation énergétique dans les simulations OpenRadioss.",
+          title: "FEA Energy Consumption Study",
+          description: "Influence of Computational Parameters and Hardware Configurations on Energy Consumption in OpenRadioss Simulations.",
         },
         mario: {
           title: "Mario Maker",
-          description: "Un projet simple de type \"Mario Maker\" en 2D axé sur la gestion de la mémoire, les techniques d'optimisation, la programmation événementielle et le parallélisme, avec moins d'accent sur les aspects traditionnels de l'ingénierie logicielle.",
+          description: 'A simple 2D "Mario Maker"-style project focused on memory management, optimization techniques, event-driven programming, and parallelism, with less emphasis on traditional software engineering aspects.'
         },
       },
     },
