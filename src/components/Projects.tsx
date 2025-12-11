@@ -16,13 +16,13 @@ const projectsData = [
     key: "llm",
     tags: ["Python", "HuggingFace", "HPC", "SLURM", "EnergyScopium"],
     imageUrl: "/llm_study.png",
-    demo: "https://portfolio-backend-ma3773v18-palezisc-gmailcoms-projects.vercel.app/api/paper/hyperparameters_analysis.pdf",
+    demo: "https://portfolio-backend-teal-theta.vercel.app/api/paper/hyperparameters_analysis.pdf",
   },
   {
     key: "fea",
     tags: ["Python", "OpenRadioss", "HPC", "SLURM", "EnergyScopium"],
     imageUrl: "/fea_study.png",
-    demo: "https://portfolio-backend-ma3773v18-palezisc-gmailcoms-projects.vercel.app/api/paper/openradioss_article_v2.pdf",
+    demo: "https://portfolio-backend-teal-theta.vercel.app/api/paper/openradioss_article_v2.pdf",
   },
   {
     key: "mario",
