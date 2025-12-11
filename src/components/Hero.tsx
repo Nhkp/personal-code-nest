@@ -8,8 +8,8 @@ export const Hero = () => {
   const t = translations[language];
   
   const cvEndpoint = language === "fr" 
-    ? "https://portfolio-backend-ma3773v18-palezisc-gmailcoms-projects.vercel.app/api/cv/fr"
-    : "https://portfolio-backend-ma3773v18-palezisc-gmailcoms-projects.vercel.app/api/cv/en";
+    ? "https://portfolio-backend-teal-theta.vercel.app/api/cv/fr"
+    : "https://portfolio-backend-teal-theta.vercel.app/api/cv/en";
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated gradient background */}
