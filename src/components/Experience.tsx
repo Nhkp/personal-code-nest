@@ -13,9 +13,9 @@ export const Experience = () => {
   const t = translations[language];
   
   return (
-    <section id="experience" className="py-24 bg-gradient-to-b from-secondary/20 to-background">
+    <section id="experience" className="py-24 bg-secondary/20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 leading-tight pb-2 gradient-text">
           {t.experience.title}
         </h2>
         
@@ -31,7 +31,7 @@ export const Experience = () => {
                 {/* Timeline dot */}
                 <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-primary shadow-glow" />
                 
-                <div className="glass-card rounded-xl p-6 hover:shadow-glow transition-all duration-500">
+                <div className="glass-card rounded-lg p-6 hover:shadow-glow transition-all duration-500">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                     <h3 className="text-xl font-bold text-primary">{expData.title}</h3>
                     <span className="text-sm text-muted-foreground font-medium">{expData.period}</span>

@@ -13,13 +13,6 @@ const projectsData = [
     gitlab: "https://gitlab.com/Nhkp/openclassrooms-projet-7",
   },
   {
-    key: "portfolio",
-    tags: ["Docker", "PostgreSQL", "Supabase", "FastAPI", "Railway", "Node.js", "Vite", "TypeScript", "React", "Tailwind CSS", "Vercel"],
-    imageUrl: "/preview_zoomed.png",
-    gitlab: "https://gitlab.com/Nhkp/side-project",
-    demo: "#",
-  },
-  {
     key: "llm",
     tags: ["Python", "HuggingFace", "HPC", "SLURM", "EnergyScopium"],
     imageUrl: "/llm_study.png",
@@ -30,6 +23,13 @@ const projectsData = [
     tags: ["Python", "OpenRadioss", "HPC", "SLURM", "EnergyScopium"],
     imageUrl: "/fea_study.png",
     demo: "https://portfolio-backend-teal-theta.vercel.app/api/paper/openradioss_article_v2.pdf",
+  },
+  {
+    key: "portfolio",
+    tags: ["Docker", "PostgreSQL", "Supabase", "FastAPI", "Node.js", "Vite", "TypeScript", "React", "Tailwind CSS", "Vercel"],
+    imageUrl: "/preview_zoomed.png",
+    gitlab: "https://gitlab.com/Nhkp/side-project",
+    demo: "#",
   },
   {
     key: "mario",
@@ -51,7 +51,7 @@ export const Projects = () => {
 	return (
 		<section id="projects" className="py-24">
 			<div className="container mx-auto px-4">
-				<h2 className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
+				<h2 className="text-4xl md:text-5xl font-bold text-center mb-16 leading-tight pb-2 gradient-text">
 					{t.projects.title}
 				</h2>
 
@@ -61,10 +61,10 @@ export const Projects = () => {
 						return (
 							<Card
 								key={project.key}
-								className="glass-card border-border/50 hover:shadow-glow transition-all duration-500 group animate-fade-in overflow-hidden"
+								className="glass-card border-border/70 hover:shadow-glow transition-all duration-500 group animate-fade-in overflow-hidden"
 								style={{ animationDelay: `${idx * 100}ms` }}
 							>
-							<div className="h-48 relative bg-muted/50">
+							<div className="h-48 relative bg-muted/60 border-b border-border/60">
 								{project.imageUrl && (
 									<img
 										src={project.imageUrl}
@@ -88,7 +88,7 @@ export const Projects = () => {
 										{project.tags.map((tag) => (
 											<span
 												key={tag}
-												className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full"
+												className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-md"
 											>
 												{tag}
 											</span>
@@ -107,7 +107,7 @@ export const Projects = () => {
 												<Button
 													variant="outline"
 													size="sm"
-													className="border-primary/50 hover:bg-primary/10"
+													className="border-primary/35 bg-background/30 hover:bg-primary/10"
 												>
 													<Gitlab className="mr-2 h-4 w-4" />
 													Code
@@ -125,7 +125,7 @@ export const Projects = () => {
 												<Button
 													variant="outline"
 													size="sm"
-													className="border-primary/50 hover:bg-primary/10"
+													className="border-primary/35 bg-background/30 hover:bg-primary/10"
 												>
 													<ExternalLink className="mr-2 h-4 w-4" />
 													{t.projects.viewProject}
@@ -139,17 +139,15 @@ export const Projects = () => {
 					})}
 				</div>
 
-				{!showMoreProjects && (
-					<div className="flex justify-center mt-10">
-						<Button
-							variant="outline"
-							className="border-primary/50 hover:bg-primary/10"
-							onClick={() => setShowMoreProjects(true)}
-						>
-							{t.projects.seeMore}
-						</Button>
-					</div>
-				)}
+				<div className="flex justify-center mt-10">
+					<Button
+						variant="outline"
+						className="border-primary/35 bg-background/30 hover:bg-primary/10"
+						onClick={() => setShowMoreProjects((current) => !current)}
+					>
+						{showMoreProjects ? t.projects.seeLess : t.projects.seeMore}
+					</Button>
+				</div>
 			</div>
 		</section>
 	);

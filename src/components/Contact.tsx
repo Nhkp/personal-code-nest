@@ -12,7 +12,7 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center space-y-12">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight pb-2 gradient-text">
               {t.contact.title}
             </h2>
             <p className="text-xl text-muted-foreground">
@@ -20,7 +20,7 @@ export const Contact = () => {
             </p>
           </div>
           
-          <div className="glass-card rounded-2xl p-12 space-y-8 hover:shadow-glow transition-all duration-500">
+          <div className="glass-card rounded-lg p-12 space-y-8 hover:shadow-glow transition-all duration-500">
             <div className="space-y-6">
               <a 
                 href="mailto:palezis.c@gmail.com"
@@ -35,7 +35,7 @@ export const Contact = () => {
                   href="https://github.com/Nhkp" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-secondary hover:bg-primary/20 text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+                  className="p-3 rounded-md bg-secondary hover:bg-primary/15 text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
                 >
                   <Github className="h-6 w-6" />
                 </a>
@@ -43,7 +43,7 @@ export const Contact = () => {
                   href="https://linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-secondary hover:bg-primary/20 text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+                  className="p-3 rounded-md bg-secondary hover:bg-primary/15 text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
@@ -60,7 +60,7 @@ export const Contact = () => {
             
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow transition-all duration-300"
             >
               <Mail className="mr-2 h-5 w-5" />
               {t.contact.sendEmail}

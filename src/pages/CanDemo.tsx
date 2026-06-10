@@ -104,7 +104,7 @@ const CanDemo = () => {
     <div className="min-h-screen bg-background py-20">
       <div className="container mx-auto px-4">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold gradient-text mb-2">CAN BUS Simulator</h1>
+          <h1 className="text-4xl font-bold leading-tight pb-2 gradient-text mb-2">CAN BUS Simulator</h1>
           <p className="text-muted-foreground">
             Real-time Controller Area Network bus simulation and monitoring
           </p>

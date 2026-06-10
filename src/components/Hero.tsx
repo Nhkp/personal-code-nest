@@ -14,21 +14,20 @@ export const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/10 animate-gradient-shift bg-[length:200%_200%]" />
-      
-      {/* Floating orbs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+      <div className="absolute inset-0 surface-grid" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/70 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
           <div className="space-y-4">
-            <p className="text-primary text-lg font-medium tracking-wide">{t.hero.greeting}</p>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold gradient-text">
+            <p className="inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-4 py-1.5 text-primary text-sm font-semibold tracking-wide">
+              {t.hero.greeting}
+            </p>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight gradient-text">
               {t.hero.title}
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-light">
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium">
               {t.hero.subtitle}
             </h2>
           </div>
@@ -38,9 +37,9 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="group relative overflow-hidden bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all duration-300"
+            <Button
+              size="lg"
+              className="group relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow transition-all duration-300"
             >
               <span className="relative z-10 flex items-center gap-2">
                 {t.hero.viewWork}
@@ -51,7 +50,7 @@ export const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
+                className="border-primary/35 bg-background/40 hover:bg-primary/10 transition-all duration-300"
               >
                 <Download className="mr-2 h-4 w-4" />
                 {t.hero.downloadCV}
