@@ -11,6 +11,9 @@ export const Hero = () => {
   //   ? "https://portfolio-backend-teal-theta.vercel.app/api/cv/fr"
   //   : "https://portfolio-backend-teal-theta.vercel.app/api/cv/en";
   const cvEndpoint ="https://portfolio-backend-teal-theta.vercel.app/api/cv";
+  const scrollToProjects = () => {
+    document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -39,6 +42,7 @@ export const Hero = () => {
           <div className="flex flex-wrap gap-4 justify-center items-center">
             <Button
               size="lg"
+              onClick={scrollToProjects}
               className="group relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow transition-all duration-300"
             >
               <span className="relative z-10 flex items-center gap-2">
