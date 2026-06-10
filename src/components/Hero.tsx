@@ -7,9 +7,11 @@ export const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language];
   
-  const cvEndpoint = language === "fr" 
-    ? "https://portfolio-backend-teal-theta.vercel.app/api/cv/fr"
-    : "https://portfolio-backend-teal-theta.vercel.app/api/cv/en";
+  // const cvEndpoint = language === "fr" 
+  //   ? "https://portfolio-backend-teal-theta.vercel.app/api/cv/fr"
+  //   : "https://portfolio-backend-teal-theta.vercel.app/api/cv/en";
+  const cvEndpoint ="https://portfolio-backend-teal-theta.vercel.app/api/cv";
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated gradient background */}
