@@ -34,7 +34,12 @@ export const translations = {
       title: "Projets",
       description: "Description du projet",
       viewProject: "Voir le projet",
+      seeMore: "Voir plus",
       projects: {
+        openclassroomsProjet7: {
+          title: "Assistant conversationnel culturel",
+          description: "POC d'assistant intelligent pour recommander des événements culturels à partir de données OpenAgenda. Le système utilise une architecture RAG avec LangChain, Mistral, FAISS et une API FastAPI.",
+        },
         portfolio: {
           title: "Site Portfolio",
           description: "Un site portfolio personnel construit avec une architecture Docker multi-conteneurs, comprenant une base de données PostgreSQL, un backend FastAPI et un frontend moderne et responsive.",
@@ -129,7 +134,12 @@ export const translations = {
     projects: {
       title: "Featured Projects",
       viewProject: "View projects",
+      seeMore: "See more",
       projects: {
+        openclassroomsProjet7: {
+          title: "Cultural Conversational Assistant",
+          description: "POC of an intelligent assistant designed to recommend cultural events using OpenAgenda data. The system relies on a RAG architecture with LangChain, Mistral, FAISS, and a FastAPI API.",
+        },
         portfolio: {
           title: "Portfolio Website",
           description: "A personal portfolio website built with a multi-container Docker architecture, featuring a PostgreSQL database, a FastAPI backend, and a modern responsive frontend.",

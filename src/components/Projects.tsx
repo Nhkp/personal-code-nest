@@ -1,10 +1,17 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Gitlab } from "lucide-react";
+import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 
 const projectsData = [
+  {
+    key: "openclassroomsProjet7",
+    tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],
+    imageUrl: "/placeholder.svg",
+    gitlab: "https://gitlab.com/Nhkp/openclassrooms-projet-7",
+  },
   {
     key: "portfolio",
     tags: ["Docker", "PostgreSQL", "Supabase", "FastAPI", "Railway", "Node.js", "Vite", "TypeScript", "React", "Tailwind CSS", "Vercel"],
@@ -36,6 +43,10 @@ const projectsData = [
 export const Projects = () => {
 	const { language } = useLanguage();
 	const t = translations[language];
+	const [showMoreProjects, setShowMoreProjects] = useState(false);
+	const visibleProjects = showMoreProjects
+		? projectsData
+		: projectsData.filter((project) => project.key !== "mario");
 	
 	return (
 		<section id="projects" className="py-24">
@@ -45,7 +56,7 @@ export const Projects = () => {
 				</h2>
 
 				<div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-					{projectsData.map((project, idx) => {
+					{visibleProjects.map((project, idx) => {
 						const projectInfo = t.projects.projects[project.key as keyof typeof t.projects.projects];
 						return (
 							<Card
@@ -127,6 +138,18 @@ export const Projects = () => {
 						);
 					})}
 				</div>
+
+				{!showMoreProjects && (
+					<div className="flex justify-center mt-10">
+						<Button
+							variant="outline"
+							className="border-primary/50 hover:bg-primary/10"
+							onClick={() => setShowMoreProjects(true)}
+						>
+							{t.projects.seeMore}
+						</Button>
+					</div>
+				)}
 			</div>
 		</section>
 	);
