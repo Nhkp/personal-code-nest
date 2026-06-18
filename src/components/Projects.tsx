@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Gitlab } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
@@ -10,7 +10,7 @@ const projectsData = [
     key: "openclassroomsProjet7",
     tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],
     imageUrl: "/placeholder.svg",
-    gitlab: "https://gitlab.com/Nhkp/openclassrooms-projet-7",
+    github: "https://github.com/Nhkp/rag-cultural-agent",
   },
   {
     key: "llm",
@@ -28,15 +28,15 @@ const projectsData = [
     key: "portfolio",
     tags: ["Docker", "PostgreSQL", "Supabase", "FastAPI", "Node.js", "Vite", "TypeScript", "React", "Tailwind CSS", "Vercel"],
     imageUrl: "/preview_zoomed.png",
-    gitlab: "https://gitlab.com/Nhkp/side-project",
+    github: "https://github.com/Nhkp/portfolio",
     demo: "#",
   },
   {
     key: "mario",
     tags: ["C", "SDL2", "CMake", "Makefile"],
     imageUrl: "/mario.png",
-    gitlab: "https://gitlab.com/Nhkp/mario-project",
-    demo: "https://gitlab.com/Nhkp/mario-project/-/raw/master/demo.mp4",
+    github: "https://github.com/Nhkp/Projet-Mario",
+    demo: "https://raw.githubusercontent.com/Nhkp/mario-project/master/demo.mp4",
   },
 ];
 
@@ -96,9 +96,9 @@ export const Projects = () => {
 									</div>
 
 									<div className="flex gap-3 pt-2">
-										{project.gitlab && (
+										{project.github && (
 											<a
-												href={project.gitlab}
+												href={project.github}
 												target="_blank"
 												rel="noopener noreferrer"
 												tabIndex={-1}
@@ -109,7 +109,7 @@ export const Projects = () => {
 													size="sm"
 													className="border-primary/35 bg-background/30 hover:bg-primary/10"
 												>
-													<Gitlab className="mr-2 h-4 w-4" />
+													<Github className="mr-2 h-4 w-4" />
 													Code
 												</Button>
 											</a>

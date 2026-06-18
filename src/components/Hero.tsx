@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Gitlab, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 
@@ -64,12 +64,12 @@ export const Hero = () => {
           
           <div className="flex gap-6 justify-center pt-8">
             <a 
-              href="https://gitlab.com/Nhkp"
+              href="https://github.com/Nhkp"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
             >
-              <Gitlab className="h-6 w-6" />
+              <Github className="h-6 w-6" />
             </a>
             <a 
               href="https://linkedin.com/in/cpalezis" 
