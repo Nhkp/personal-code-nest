@@ -20,9 +20,9 @@ export const translations = {
       paragraph1: "Je suis ingénieur logiciel spécialisé dans le calcul haute performance, les pipelines machine learning et les applications IA concrètes. Mon parcours relie le calcul haute performance, la programmation GPU, le backend Python et les usages récents des LLM.",
       paragraph2: "J'aime transformer des problèmes techniques complexes en outils utiles: APIs FastAPI, prototypes RAG, workflows d'évaluation, dashboards de monitoring, pipelines de benchmark et optimisations de calcul. Mon expérience va de la tomographie accélérée GPU aux charges de travail LLM et simulation.",
       paragraph3: "Je cherche à construire des solutions fiables, mesurables et maintenables, avec une attention particulière à la performance, à l'expérience utilisateur et à la valeur métier. Je travaille aussi bien avec des équipes produit qu'avec des environnements R&D exigeants.",
-      },
+    },
     skills: {
-      title: "Expertises",
+      title: "Compétences",
       categories: {
         gpu: {
           title: "GPU & Performance Computing",
@@ -174,7 +174,7 @@ export const translations = {
       paragraph3: "I aim to build reliable, measurable, and maintainable solutions with attention to performance, user experience, and business value. I work well with both product teams and demanding R&D environments.",
     },
     skills: {
-      title: "Expertise",
+      title: "Skills",
       categories: {
         gpu: {
           title: "GPU & Performance Computing",
