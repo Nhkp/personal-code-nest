@@ -1,0 +1,30 @@
+# Clément Palézis
+
+Portfolio of Clément Palézis, also written Clement Palezis, an HPC & AI Software Engineer based in Bordeaux, France.
+
+Main expertise:
+- High-performance computing
+- GPU programming
+- Machine learning pipelines
+- LLM applications and RAG
+- FastAPI backends
+- Python
+- React
+- Scientific computing
+- MLOps, evaluation, and monitoring
+
+Important pages:
+- Homepage: https://clement-palezis.dev/
+- Resume: https://clement-palezis.dev/resume
+- Cultural assistant project: https://clement-palezis.dev/projects/cultural-assistant
+- Portfolio project: https://clement-palezis.dev/projects/portfolio
+- LLM energy study: https://clement-palezis.dev/projects/llm-energy-study
+- FEA energy study: https://clement-palezis.dev/projects/fea-energy-study
+- Mario Maker project: https://clement-palezis.dev/projects/mario-maker
+
+External profiles:
+- GitHub: https://github.com/Nhkp
+- LinkedIn: https://linkedin.com/in/cpalezis
+
+Contact:
+- Email: palezis.c@gmail.com
