@@ -2,47 +2,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
-
-const projectsData = [
-  {
-    key: "openclassroomsProjet7",
-    tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],
-    imageUrl: "/placeholder.svg",
-    github: "https://github.com/Nhkp/rag-cultural-agent",
-  },
-  {
-    key: "llm",
-    tags: ["Python", "HuggingFace", "HPC", "SLURM", "EnergyScopium"],
-    imageUrl: "/llm_study.png",
-    demo: "https://portfolio-backend-teal-theta.vercel.app/api/paper/hyperparameters_analysis.pdf",
-  },
-  {
-    key: "fea",
-    tags: ["Python", "OpenRadioss", "HPC", "SLURM", "EnergyScopium"],
-    imageUrl: "/fea_study.png",
-    demo: "https://portfolio-backend-teal-theta.vercel.app/api/paper/openradioss_article_v2.pdf",
-  },
-  {
-    key: "portfolio",
-    tags: ["Docker", "PostgreSQL", "Supabase", "FastAPI", "Node.js", "Vite", "TypeScript", "React", "Tailwind CSS", "Vercel"],
-    imageUrl: "/preview_zoomed.png",
-    github: "https://github.com/Nhkp/portfolio",
-    demo: "#",
-  },
-  {
-    key: "mario",
-    tags: ["C", "SDL2", "CMake", "Makefile"],
-    imageUrl: "/mario.png",
-    github: "https://github.com/Nhkp/Projet-Mario",
-    demo: "https://raw.githubusercontent.com/Nhkp/mario-project/master/demo.mp4",
-  },
-];
+import { projectsData } from "@/data/projects";
 
 export const Projects = () => {
 	const { language } = useLanguage();
 	const t = translations[language];
+	const navigate = useNavigate();
 	const [showMoreProjects, setShowMoreProjects] = useState(false);
 	const visibleProjects = showMoreProjects
 		? projectsData
@@ -61,7 +29,16 @@ export const Projects = () => {
 						return (
 							<Card
 								key={project.key}
-								className="glass-card border-border/70 hover:shadow-glow transition-all duration-500 group animate-fade-in overflow-hidden"
+								role="link"
+								tabIndex={0}
+								onClick={() => navigate(`/projects/${project.slug}`)}
+								onKeyDown={(event) => {
+									if (event.key === "Enter" || event.key === " ") {
+										event.preventDefault();
+										navigate(`/projects/${project.slug}`);
+									}
+								}}
+								className="glass-card border-border/70 hover:shadow-glow transition-all duration-500 group animate-fade-in overflow-hidden cursor-pointer"
 								style={{ animationDelay: `${idx * 100}ms` }}
 							>
 							<div className="h-48 relative bg-muted/60 border-b border-border/60">
@@ -101,6 +78,7 @@ export const Projects = () => {
 												href={project.github}
 												target="_blank"
 												rel="noopener noreferrer"
+												onClick={(event) => event.stopPropagation()}
 												tabIndex={-1}
 												className="inline-block"
 											>
@@ -119,6 +97,7 @@ export const Projects = () => {
 												href={project.demo}
 												target="_blank"
 												rel="noopener noreferrer"
+												onClick={(event) => event.stopPropagation()}
 												tabIndex={-1}
 												className="inline-block"
 											>
