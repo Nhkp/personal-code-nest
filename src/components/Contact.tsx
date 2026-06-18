@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 
 export const Contact = () => {
   const { language } = useLanguage();
   const t = translations[language];
+  const emailAddress = "palezis.c@gmail.com";
+  const emailHref = `mailto:${emailAddress}?subject=Contact%20from%20portfolio`;
   
   return (
     <section id="contact" className="py-24">
@@ -23,11 +25,11 @@ export const Contact = () => {
           <div className="glass-card rounded-lg p-12 space-y-8 hover:shadow-glow transition-all duration-500">
             <div className="space-y-6">
               <a 
-                href="mailto:palezis.c@gmail.com"
+                href={emailHref}
                 className="flex items-center justify-center gap-3 text-xl text-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-6 w-6" />
-                palezis.c@gmail.com
+                {emailAddress}
               </a>
               
               <div className="flex gap-6 justify-center pt-4">
@@ -58,12 +60,15 @@ export const Contact = () => {
               </div>
             </div>
             
-            <Button 
+            <Button
+              asChild
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-glow transition-all duration-300"
             >
-              <Mail className="mr-2 h-5 w-5" />
-              {t.contact.sendEmail}
+              <a href={emailHref}>
+                <Mail className="mr-2 h-5 w-5" />
+                {t.contact.sendEmail}
+              </a>
             </Button>
           </div>
         </div>
