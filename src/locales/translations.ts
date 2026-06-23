@@ -91,6 +91,10 @@ export const translations = {
           title: "Assistant conversationnel culturel",
           description: "POC d'assistant intelligent pour recommander des événements culturels à partir de données OpenAgenda. Le système utilise une architecture RAG avec LangChain, Mistral, FAISS et une API FastAPI.",
         },
+        rlAgent: {
+          title: "Agent RL LunarLander",
+          description: "Projet de reinforcement learning autour de LunarLander-v3 : entraînement d'un agent PPO avec Gymnasium et Stable-Baselines3, suivi d'expériences, API FastAPI et dashboard Streamlit.",
+        },
         portfolio: {
           title: "Site Portfolio",
           description: "Un portfolio personnel avec frontend React, backend FastAPI, stockage Supabase et déploiement moderne pour servir du contenu dynamique.",
@@ -241,6 +245,10 @@ export const translations = {
         openclassroomsProjet7: {
           title: "Cultural Conversational Assistant",
           description: "POC of an intelligent assistant designed to recommend cultural events using OpenAgenda data. The system relies on a RAG architecture with LangChain, Mistral, FAISS, and a FastAPI API.",
+        },
+        rlAgent: {
+          title: "LunarLander RL Agent",
+          description: "A reinforcement learning project around LunarLander-v3: training a PPO agent with Gymnasium and Stable-Baselines3, experiment tracking, a FastAPI API, and a Streamlit dashboard.",
         },
         portfolio: {
           title: "Portfolio Website",

@@ -12,6 +12,11 @@ const projectDetails: Record<ProjectKey, { outcome: string; role: string }> = {
     outcome:
       "A proof of concept that recommends cultural events from OpenAgenda data with contextual answers and a FastAPI service.",
   },
+  rlAgent: {
+    role: "Reinforcement learning experimentation, PPO training, API serving, dashboarding, and automated testing.",
+    outcome:
+      "A trained LunarLander-v3 agent with evaluated PPO configurations, saved model artifacts, a FastAPI inference endpoint, and a Streamlit results dashboard.",
+  },
   portfolio: {
     role: "Full-stack architecture, frontend implementation, backend API, storage, and deployment setup.",
     outcome:

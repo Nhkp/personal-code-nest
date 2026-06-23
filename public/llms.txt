@@ -17,6 +17,7 @@ Important pages:
 - Homepage: https://clement-palezis.dev/
 - Resume: https://clement-palezis.dev/resume
 - Cultural assistant project: https://clement-palezis.dev/projects/cultural-assistant
+- LunarLander RL agent project: https://clement-palezis.dev/projects/rl-agent-training
 - Portfolio project: https://clement-palezis.dev/projects/portfolio
 - LLM energy study: https://clement-palezis.dev/projects/llm-energy-study
 - FEA energy study: https://clement-palezis.dev/projects/fea-energy-study

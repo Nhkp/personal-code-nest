@@ -7,6 +7,13 @@ export const projectsData = [
     github: "https://github.com/Nhkp/rag-cultural-agent",
   },
   {
+    key: "rlAgent",
+    slug: "rl-agent-training",
+    tags: ["Python", "Reinforcement Learning", "PPO", "Gymnasium", "Stable-Baselines3", "FastAPI", "Streamlit"],
+    imageUrl: "/lunar_lander.png",
+    github: "https://github.com/Nhkp/rl-agent-training",
+  },
+  {
     key: "llm",
     slug: "llm-energy-study",
     tags: ["Python", "HuggingFace", "HPC", "SLURM", "EnergyScopium"],
