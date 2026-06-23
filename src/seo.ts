@@ -42,6 +42,8 @@ const projectDescriptions: Record<string, string> = {
     "Project page for Clément Palézis' cultural conversational assistant, a RAG proof of concept using LangChain, Mistral, FAISS, OpenAgenda data, and FastAPI.",
   rlAgent:
     "Project page for Clément Palézis' LunarLander reinforcement learning agent, trained with PPO, Gymnasium, Stable-Baselines3, FastAPI, and Streamlit.",
+  cvForMri:
+    "Project page for Clément Palézis' semi-supervised brain MRI classification prototype, combining ResNet embeddings, clustering, PyTorch, and weak-label-assisted training.",
   portfolio:
     "Project page for Clément Palézis' personal portfolio, built with React, FastAPI, Supabase storage, Vercel, and modern full-stack tooling.",
   llm: "Project page for Clément Palézis' LLM fine-tuning energy study, analyzing hyperparameters, hardware configurations, and energy consumption.",

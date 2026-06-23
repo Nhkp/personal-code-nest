@@ -17,6 +17,11 @@ const projectDetails: Record<ProjectKey, { outcome: string; role: string }> = {
     outcome:
       "A trained LunarLander-v3 agent with evaluated PPO configurations, saved model artifacts, a FastAPI inference endpoint, and a Streamlit results dashboard.",
   },
+  cvForMri: {
+    role: "Computer vision pipeline design, MRI dataset validation, feature extraction, clustering analysis, and semi-supervised CNN training.",
+    outcome:
+      "A research prototype comparing supervised and weak-label-assisted ResNet training for binary brain MRI classification under a constrained annotation budget.",
+  },
   portfolio: {
     role: "Full-stack architecture, frontend implementation, backend API, storage, and deployment setup.",
     outcome:

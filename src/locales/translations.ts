@@ -95,6 +95,10 @@ export const translations = {
           title: "Agent RL LunarLander",
           description: "Projet de reinforcement learning autour de LunarLander-v3 : entraînement d'un agent PPO avec Gymnasium et Stable-Baselines3, suivi d'expériences, API FastAPI et dashboard Streamlit.",
         },
+        cvForMri: {
+          title: "Classification IRM semi-supervisée",
+          description: "Prototype de computer vision pour classifier des IRM cérébrales avec peu d'annotations expertes, en combinant embeddings ResNet, clustering et entraînement semi-supervisé.",
+        },
         portfolio: {
           title: "Site Portfolio",
           description: "Un portfolio personnel avec frontend React, backend FastAPI, stockage Supabase et déploiement moderne pour servir du contenu dynamique.",
@@ -249,6 +253,10 @@ export const translations = {
         rlAgent: {
           title: "LunarLander RL Agent",
           description: "A reinforcement learning project around LunarLander-v3: training a PPO agent with Gymnasium and Stable-Baselines3, experiment tracking, a FastAPI API, and a Streamlit dashboard.",
+        },
+        cvForMri: {
+          title: "Semi-Supervised MRI Classification",
+          description: "A computer vision prototype for classifying brain MRI scans with scarce expert labels, combining ResNet embeddings, clustering, and semi-supervised training.",
         },
         portfolio: {
           title: "Portfolio Website",

@@ -14,6 +14,13 @@ export const projectsData = [
     github: "https://github.com/Nhkp/rl-agent-training",
   },
   {
+    key: "cvForMri",
+    slug: "cv-for-mri",
+    tags: ["Python", "Computer Vision", "PyTorch", "ResNet", "Semi-Supervised Learning", "Clustering"],
+    imageUrl: "/cv_for_mri.png",
+    github: "https://github.com/Nhkp/cv-for-mri",
+  },
+  {
     key: "llm",
     slug: "llm-energy-study",
     tags: ["Python", "HuggingFace", "HPC", "SLURM", "EnergyScopium"],
