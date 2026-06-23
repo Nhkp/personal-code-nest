@@ -3,7 +3,7 @@ export const projectsData = [
     key: "openclassroomsProjet7",
     slug: "cultural-assistant",
     tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/cultural_rag_agent.png",
     github: "https://github.com/Nhkp/rag-cultural-agent",
   },
   {
