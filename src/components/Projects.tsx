@@ -14,7 +14,7 @@ export const Projects = () => {
 	const [showMoreProjects, setShowMoreProjects] = useState(false);
 	const visibleProjects = showMoreProjects
 		? projectsData
-		: projectsData.filter((project) => project.key !== "mario");
+		: projectsData.slice(0, 4);
 	
 	return (
 		<section id="projects" className="py-24">
