@@ -7,6 +7,18 @@ import { Link, useParams } from "react-router-dom";
 import NotFound from "./NotFound";
 
 const projectDetails: Record<ProjectKey, { outcome: string; role: string }> = {
+  inferenceLab: {
+    role: "Benchmark design, vLLM launch and measurement tooling, and regression checks.",
+    outcome: "A reproducible workflow for measuring streaming LLM inference, comparing paired runs, and checking performance regressions offline.",
+  },
+  chessOpeningsAgent: {
+    role: "Angular chessboard, FastAPI integration with Lichess and Stockfish, and vector indexing of opening material.",
+    outcome: "A local prototype for exploring opening theory and evaluating positions during practice.",
+  },
+  medicalTriageAgent: {
+    role: "Public dataset preparation, privacy checks, QLoRA training, model evaluation, and API design.",
+    outcome: "A bilingual research prototype with reproducible comparisons of the base, supervised fine-tuned, and DPO-aligned models and metadata-only audit traces.",
+  },
   openclassroomsProjet7: {
     role: "RAG application design, backend API, semantic search, and LLM integration.",
     outcome:

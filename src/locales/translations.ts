@@ -87,6 +87,18 @@ export const translations = {
       seeMore: "Voir plus",
       seeLess: "Voir moins",
       projects: {
+        inferenceLab: {
+          title: "InferenceLab",
+          description: "Banc d’essai reproductible pour le serving de LLM avec vLLM. Il automatise les comparaisons entre configurations et détecte les régressions de performance à partir des mesures collectées.",
+        },
+        chessOpeningsAgent: {
+          title: "Agent d’entraînement aux ouvertures d’échecs",
+          description: "Prototype d’entraînement aux ouvertures avec un échiquier Angular, les coups théoriques de Lichess, l’évaluation de Stockfish et une recherche vectorielle dans Milvus.",
+        },
+        medicalTriageAgent: {
+          title: "Agent de triage médical",
+          description: "Prototype de recherche bilingue qui compare le modèle de base, le fine-tuning supervisé et l’alignement DPO sur des données publiques, avec des contrôles de confidentialité et des traces d’audit.",
+        },
         openclassroomsProjet7: {
           title: "Assistant conversationnel culturel",
           description: "POC d'assistant intelligent pour recommander des événements culturels à partir de données OpenAgenda. Le système utilise une architecture RAG avec LangChain, Mistral, FAISS et une API FastAPI.",
@@ -246,6 +258,18 @@ export const translations = {
       seeMore: "See more",
       seeLess: "See less",
       projects: {
+        inferenceLab: {
+          title: "InferenceLab",
+          description: "A reproducible benchmark suite for vLLM serving. It runs comparisons across configurations and checks collected performance measurements for regressions.",
+        },
+        chessOpeningsAgent: {
+          title: "Chess Openings Agent",
+          description: "A chess opening practice prototype with an Angular board, opening theory from Lichess, position evaluation with Stockfish, and vector search in Milvus.",
+        },
+        medicalTriageAgent: {
+          title: "Medical Triage Agent",
+          description: "A bilingual research prototype that compares base, supervised fine-tuned, and DPO-aligned models on public data, with privacy checks and audit traces.",
+        },
         openclassroomsProjet7: {
           title: "Cultural Conversational Assistant",
           description: "POC of an intelligent assistant designed to recommend cultural events using OpenAgenda data. The system relies on a RAG architecture with LangChain, Mistral, FAISS, and a FastAPI API.",

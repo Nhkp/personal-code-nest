@@ -1,10 +1,21 @@
 const projects = [
   {
-    key: "openclassroomsProjet7",
-    slug: "cultural-assistant",
-    tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],
-    imageUrl: "/cultural_rag_agent.png",
-    github: "https://github.com/Nhkp/rag-cultural-agent",
+    key: "inferenceLab",
+    slug: "inferencelab",
+    tags: ["Python", "vLLM", "LLM Serving", "Benchmarking", "FastAPI"],
+    github: "https://github.com/Nhkp/InferenceLab",
+  },
+  {
+    key: "chessOpeningsAgent",
+    slug: "chess-openings-agent",
+    tags: ["Python", "Angular", "FastAPI", "Stockfish", "Lichess", "Milvus"],
+    github: "https://github.com/Nhkp/chess-openings-agent",
+  },
+  {
+    key: "medicalTriageAgent",
+    slug: "medical-triage-agent",
+    tags: ["Python", "QLoRA", "SFT", "DPO", "vLLM", "FastAPI"],
+    github: "https://github.com/Nhkp/medical-triage-agent",
   },
   {
     key: "rlAgent",
@@ -12,6 +23,13 @@ const projects = [
     tags: ["Python", "Reinforcement Learning", "PPO", "Gymnasium", "Stable-Baselines3", "FastAPI", "Streamlit"],
     imageUrl: "/lunar_lander.png",
     github: "https://github.com/Nhkp/rl-agent-training",
+  },
+  {
+    key: "openclassroomsProjet7",
+    slug: "cultural-assistant",
+    tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],
+    imageUrl: "/cultural_rag_agent.png",
+    github: "https://github.com/Nhkp/rag-cultural-agent",
   },
   {
     key: "cvForMri",
