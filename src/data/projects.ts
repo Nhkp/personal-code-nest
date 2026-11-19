@@ -1,4 +1,4 @@
-export const projectsData = [
+const projects = [
   {
     key: "openclassroomsProjet7",
     slug: "cultural-assistant",
@@ -52,4 +52,13 @@ export const projectsData = [
   },
 ] as const;
 
-export type ProjectKey = (typeof projectsData)[number]["key"];
+export type ProjectKey = (typeof projects)[number]["key"];
+
+export const projectsData: readonly {
+  key: ProjectKey;
+  slug: string;
+  tags: readonly string[];
+  imageUrl?: string;
+  github?: string;
+  demo?: string;
+}[] = projects;

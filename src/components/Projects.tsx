@@ -25,7 +25,7 @@ export const Projects = () => {
 
 				<div id="project-cards" className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 					{visibleProjects.map((project, idx) => {
-						const projectInfo = t.projects.projects[project.key as keyof typeof t.projects.projects];
+						const projectInfo = t.projects.projects[project.key];
 						return (
 							<Card
 								key={project.key}
@@ -42,15 +42,15 @@ export const Projects = () => {
 								className="glass-card border-border/70 hover:shadow-glow transition-all duration-500 group animate-fade-in overflow-hidden cursor-pointer"
 								style={{ animationDelay: `${idx * 100}ms` }}
 							>
-							<div className="h-48 relative bg-muted/60 border-b border-border/60">
 								{project.imageUrl && (
-									<img
-										src={project.imageUrl}
-										alt={projectInfo.title}
-										className="absolute inset-0 w-full h-full object-cover"
-									/>
+									<div className="h-48 relative bg-muted/60 border-b border-border/60">
+										<img
+											src={project.imageUrl}
+											alt={projectInfo.title}
+											className="absolute inset-0 w-full h-full object-cover"
+										/>
+									</div>
 								)}
-							</div>
 
 								<CardHeader>
 									<CardTitle className="text-2xl group-hover:text-primary transition-colors">

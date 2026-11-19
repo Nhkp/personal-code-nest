@@ -71,9 +71,11 @@ const ProjectDetail = () => {
           </div>
 
           <article className="glass-card overflow-hidden rounded-lg">
-            <div className="relative h-64 border-b border-border/60 bg-muted/60 md:h-80">
-              <img src={project.imageUrl} alt={projectInfo.title} className="absolute inset-0 h-full w-full object-cover" />
-            </div>
+            {project.imageUrl && (
+              <div className="relative h-64 border-b border-border/60 bg-muted/60 md:h-80">
+                <img src={project.imageUrl} alt={projectInfo.title} className="absolute inset-0 h-full w-full object-cover" />
+              </div>
+            )}
 
             <div className="space-y-8 p-8 md:p-12">
               <header className="space-y-4">
