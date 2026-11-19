@@ -23,7 +23,7 @@ export const Projects = () => {
 					{t.projects.title}
 				</h2>
 
-				<div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+				<div id="project-cards" className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 					{visibleProjects.map((project, idx) => {
 						const projectInfo = t.projects.projects[project.key as keyof typeof t.projects.projects];
 						return (
@@ -33,6 +33,7 @@ export const Projects = () => {
 								tabIndex={0}
 								onClick={() => navigate(`/projects/${project.slug}`)}
 								onKeyDown={(event) => {
+									if (event.target !== event.currentTarget) return;
 									if (event.key === "Enter" || event.key === " ") {
 										event.preventDefault();
 										navigate(`/projects/${project.slug}`);
@@ -74,42 +75,40 @@ export const Projects = () => {
 
 									<div className="flex gap-3 pt-2">
 										{project.github && (
-											<a
-												href={project.github}
-												target="_blank"
-												rel="noopener noreferrer"
-												onClick={(event) => event.stopPropagation()}
-												tabIndex={-1}
-												className="inline-block"
+											<Button
+												asChild
+												variant="outline"
+												size="sm"
+												className="border-primary/35 bg-background/30 hover:bg-primary/10"
 											>
-												<Button
-													variant="outline"
-													size="sm"
-													className="border-primary/35 bg-background/30 hover:bg-primary/10"
+												<a
+													href={project.github}
+													target="_blank"
+													rel="noopener noreferrer"
+													onClick={(event) => event.stopPropagation()}
 												>
 													<Github className="mr-2 h-4 w-4" />
 													Code
-												</Button>
-											</a>
+												</a>
+											</Button>
 										)}
 										{project.demo && (
-											<a
-												href={project.demo}
-												target="_blank"
-												rel="noopener noreferrer"
-												onClick={(event) => event.stopPropagation()}
-												tabIndex={-1}
-												className="inline-block"
+											<Button
+												asChild
+												variant="outline"
+												size="sm"
+												className="border-primary/35 bg-background/30 hover:bg-primary/10"
 											>
-												<Button
-													variant="outline"
-													size="sm"
-													className="border-primary/35 bg-background/30 hover:bg-primary/10"
+												<a
+													href={project.demo}
+													target="_blank"
+													rel="noopener noreferrer"
+													onClick={(event) => event.stopPropagation()}
 												>
 													<ExternalLink className="mr-2 h-4 w-4" />
 													{t.projects.viewProject}
-												</Button>
-											</a>
+												</a>
+											</Button>
 										)}
 									</div>
 								</CardContent>
@@ -121,6 +120,8 @@ export const Projects = () => {
 				<div className="flex justify-center mt-10">
 					<Button
 						variant="outline"
+						aria-expanded={showMoreProjects}
+						aria-controls="project-cards"
 						className="border-primary/35 bg-background/30 hover:bg-primary/10"
 						onClick={() => setShowMoreProjects((current) => !current)}
 					>
