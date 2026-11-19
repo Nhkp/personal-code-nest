@@ -99,6 +99,18 @@ export const translations = {
           title: "Agent de triage médical",
           description: "Prototype de recherche bilingue qui compare le modèle de base, le fine-tuning supervisé et l’alignement DPO sur des données publiques, avec des contrôles de confidentialité et des traces d’audit.",
         },
+        wildfireChatbot: {
+          title: "Chatbot RAG sur les feux de forêt",
+          description: "Prototype de chatbot sur les feux de forêt en Gironde et dans les Landes. Il indexe des données publiques et des flux d’actualité dans Milvus et restitue les informations via FastAPI et Streamlit.",
+        },
+        checkItFlow: {
+          title: "CheckIt.AI",
+          description: "Pipeline Airflow de collecte et de transformation de publications françaises associant texte et image. Il trace leur provenance et conserve les verdicts explicitement publiés par la source de fact-checking.",
+        },
+        creditScoringMonitoring: {
+          title: "Suivi d’un modèle de scoring crédit",
+          description: "API FastAPI pour un modèle LightGBM, avec journalisation des prédictions dans PostgreSQL, analyse de dérive avec Evidently et tableau de bord Grafana.",
+        },
         openclassroomsProjet7: {
           title: "Assistant conversationnel culturel",
           description: "POC d'assistant intelligent pour recommander des événements culturels à partir de données OpenAgenda. Le système utilise une architecture RAG avec LangChain, Mistral, FAISS et une API FastAPI.",
@@ -269,6 +281,18 @@ export const translations = {
         medicalTriageAgent: {
           title: "Medical Triage Agent",
           description: "A bilingual research prototype that compares base, supervised fine-tuned, and DPO-aligned models on public data, with privacy checks and audit traces.",
+        },
+        wildfireChatbot: {
+          title: "Wildfire RAG Chatbot",
+          description: "A prototype chatbot for wildfire information in Gironde and Landes, France. It indexes public data and news feeds in Milvus and serves answers through FastAPI and Streamlit.",
+        },
+        checkItFlow: {
+          title: "CheckIt.AI",
+          description: "An Airflow pipeline for French publications that combine text and images. It tracks provenance and preserves verdicts explicitly published by the fact-checking source.",
+        },
+        creditScoringMonitoring: {
+          title: "Credit Scoring Monitoring",
+          description: "A FastAPI service for a LightGBM credit scoring model, with prediction logging in PostgreSQL, drift analysis with Evidently, and a Grafana dashboard.",
         },
         openclassroomsProjet7: {
           title: "Cultural Conversational Assistant",

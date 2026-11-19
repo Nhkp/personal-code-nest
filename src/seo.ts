@@ -41,6 +41,9 @@ const projectDescriptions: Record<ProjectKey, string> = {
   inferenceLab: "Reproducible LLM inference benchmarks with vLLM, streaming measurements, paired experiments, and offline regression checks.",
   chessOpeningsAgent: "A chess opening practice prototype combining an Angular board, Lichess opening data, Stockfish evaluation, and Milvus search.",
   medicalTriageAgent: "A bilingual medical triage research prototype with public dataset preparation, privacy checks, SFT and DPO comparisons, and audit metadata.",
+  wildfireChatbot: "A wildfire information RAG prototype for Gironde and Landes using public data sources, Milvus, FastAPI, and Streamlit.",
+  checkItFlow: "An Airflow pipeline for French text-and-image publications, tracking data provenance and preserving published fact-checking verdicts.",
+  creditScoringMonitoring: "A LightGBM credit scoring API with PostgreSQL prediction logs, Evidently drift analysis, and a provisioned Grafana dashboard.",
   openclassroomsProjet7:
     "Project page for Clément Palézis' cultural conversational assistant, a RAG proof of concept using LangChain, Mistral, FAISS, OpenAgenda data, and FastAPI.",
   rlAgent:

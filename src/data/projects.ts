@@ -25,6 +25,25 @@ const projects = [
     github: "https://github.com/Nhkp/rl-agent-training",
   },
   {
+    key: "wildfireChatbot",
+    slug: "chatbot-incendie",
+    tags: ["Python", "RAG", "Milvus", "FastAPI", "Streamlit"],
+    github: "https://github.com/Nhkp/chatbot-incendie",
+  },
+  {
+    key: "checkItFlow",
+    slug: "checkit-flow",
+    tags: ["Python", "Airflow", "ETL", "Streamlit"],
+    github: "https://github.com/Nhkp/checkit-flow",
+  },
+  {
+    key: "creditScoringMonitoring",
+    slug: "credit-scoring-monitoring",
+    tags: ["Python", "LightGBM", "FastAPI", "PostgreSQL", "Evidently", "Grafana"],
+    imageUrl: "/credit-scoring-monitoring.png",
+    github: "https://github.com/Nhkp/credit-scoring-monitoring",
+  },
+  {
     key: "openclassroomsProjet7",
     slug: "cultural-assistant",
     tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],

@@ -19,6 +19,9 @@ Important pages:
 - InferenceLab: https://clement-palezis.dev/projects/inferencelab
 - Chess Openings Agent: https://clement-palezis.dev/projects/chess-openings-agent
 - Medical Triage Agent: https://clement-palezis.dev/projects/medical-triage-agent
+- Wildfire RAG Chatbot: https://clement-palezis.dev/projects/chatbot-incendie
+- CheckIt.AI: https://clement-palezis.dev/projects/checkit-flow
+- Credit Scoring Monitoring: https://clement-palezis.dev/projects/credit-scoring-monitoring
 - Cultural assistant project: https://clement-palezis.dev/projects/cultural-assistant
 - LunarLander RL agent project: https://clement-palezis.dev/projects/rl-agent-training
 - Semi-supervised MRI classification project: https://clement-palezis.dev/projects/cv-for-mri

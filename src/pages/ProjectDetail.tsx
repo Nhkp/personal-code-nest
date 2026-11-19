@@ -19,6 +19,18 @@ const projectDetails: Record<ProjectKey, { outcome: string; role: string }> = {
     role: "Public dataset preparation, privacy checks, QLoRA training, model evaluation, and API design.",
     outcome: "A bilingual research prototype with reproducible comparisons of the base, supervised fine-tuned, and DPO-aligned models and metadata-only audit traces.",
   },
+  wildfireChatbot: {
+    role: "Source ingestion, document processing, vector indexing, and chat interface development.",
+    outcome: "A local RAG prototype that retrieves wildfire information from sources including Météo-France, NASA FIRMS, and regional news feeds.",
+  },
+  checkItFlow: {
+    role: "Source integration, multimodal ETL, Airflow orchestration, and pipeline monitoring.",
+    outcome: "A reproducible pipeline with an offline Airflow run and a Streamlit dashboard for tracking collected publications and source-provided verdicts.",
+  },
+  creditScoringMonitoring: {
+    role: "Model serving, prediction logging, drift analysis, and Grafana dashboard provisioning.",
+    outcome: "A Docker Compose setup for serving a LightGBM model and monitoring prediction volume, latency, errors, and drift.",
+  },
   openclassroomsProjet7: {
     role: "RAG application design, backend API, semantic search, and LLM integration.",
     outcome:
