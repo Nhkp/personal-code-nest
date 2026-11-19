@@ -9,12 +9,14 @@ const projects = [
     key: "chessOpeningsAgent",
     slug: "chess-openings-agent",
     tags: ["Python", "Angular", "FastAPI", "Stockfish", "Lichess", "Milvus"],
+    imageUrl: "/chess_agent.png",
     github: "https://github.com/Nhkp/chess-openings-agent",
   },
   {
     key: "medicalTriageAgent",
     slug: "medical-triage-agent",
     tags: ["Python", "QLoRA", "SFT", "DPO", "vLLM", "FastAPI"],
+    imageUrl: "/medical_agent.png",
     github: "https://github.com/Nhkp/medical-triage-agent",
   },
   {
