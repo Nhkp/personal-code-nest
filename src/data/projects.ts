@@ -1,11 +1,5 @@
 const projects = [
   {
-    key: "inferenceLab",
-    slug: "inferencelab",
-    tags: ["Python", "vLLM", "LLM Serving", "Benchmarking", "FastAPI"],
-    github: "https://github.com/Nhkp/InferenceLab",
-  },
-  {
     key: "chessOpeningsAgent",
     slug: "chess-openings-agent",
     tags: ["Python", "Angular", "FastAPI", "Stockfish", "Lichess", "Milvus"],
@@ -18,6 +12,13 @@ const projects = [
     tags: ["Python", "QLoRA", "SFT", "DPO", "vLLM", "FastAPI"],
     imageUrl: "/medical_agent.png",
     github: "https://github.com/Nhkp/medical-triage-agent",
+  },
+    {
+    key: "openclassroomsProjet7",
+    slug: "cultural-assistant",
+    tags: ["RAG", "LangChain", "Mistral", "FAISS", "FastAPI", "OpenAgenda"],
+    imageUrl: "/cultural_rag_agent.png",
+    github: "https://github.com/Nhkp/rag-cultural-agent",
   },
   {
     key: "rlAgent",
@@ -37,6 +38,12 @@ const projects = [
     slug: "checkit-flow",
     tags: ["Python", "Airflow", "ETL", "Streamlit"],
     github: "https://github.com/Nhkp/checkit-flow",
+  },
+  {
+    key: "inferenceLab",
+    slug: "inferencelab",
+    tags: ["Python", "vLLM", "LLM Serving", "Benchmarking", "FastAPI"],
+    github: "https://github.com/Nhkp/InferenceLab",
   },
   {
     key: "creditScoringMonitoring",
